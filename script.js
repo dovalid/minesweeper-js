@@ -1,4 +1,4 @@
-import { STATES, createGame, flagTile } from "../core/minesweeper.js";
+import { STATES, createGame, flagTile } from "./core/minesweeper.js";
 
 const LEVELS = {
   EASY: {
@@ -15,9 +15,9 @@ const LEVELS = {
   },
 };
 
-const revealSound = new Audio("sounds/reveal.mp3");
-const flagSound = new Audio("sounds/flag.mp3");
-const bombSound = new Audio("sounds/boom.mp3");
+const revealSound = new Audio("assets/sounds/reveal.mp3");
+const flagSound = new Audio("assets/sounds/flag.mp3");
+const bombSound = new Audio("assets/sounds/boom.mp3");
 
 const levelEl = document.querySelector("#level");
 const gameBoardEl = document.querySelector("#gameBoard");
