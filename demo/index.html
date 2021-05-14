@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body>
+    <h1>Minesweeper</h1>
+    <div class="game">
+      <div class="gameHeader">
+        <p id="mineCount"></p>
+        <form id="form" action="#">
+          <select id="level">
+            <option value="EASY">Easy</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HARD">Hard</option>
+          </select>
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-refresh"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+              <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+            </svg>
+          </button>
+        </form>
+        <p id="timer">0</p>
+      </div>
+      <div id="gameBoard"></div>
+    </div>
+    <p id="result"></p>
+    <div class="keyboardControls">
+      <h3>Keyboard controls</h3>
+      <ul>
+        <li>Tile navigation: <kbd>Arrows</kbd></li>
+        <li>Reveal: <kbd>Space / Enter</kbd></li>
+        <li>Flag: <kbd>F</kbd></li>
+        <li>Reset: <kbd>R</kbd></li>
+        <li>Level selector: <kbd>L</kbd></li>
+      </ul>
+    </div>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
